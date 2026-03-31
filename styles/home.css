@@ -1,0 +1,305 @@
+/* =========================
+   CSS VARIABLES
+   ========================= */
+   :root {
+     --color-primary: #2563eb;
+       --color-primary-light: #3b82f6;
+         --color-secondary: #111827;
+           --color-text: #1f2937;
+             --color-muted: #6b7280;
+               --color-bg: #ffffff;
+                 --color-bg-light: #f9fafb;
+                   --color-border: #e5e7eb;
+
+                     --radius-sm: 6px;
+                       --radius-md: 10px;
+
+                         --spacing-xs: 0.5rem;
+                           --spacing-sm: 0.75rem;
+                             --spacing-md: 1rem;
+                               --spacing-lg: 2rem;
+                                 --spacing-xl: 3rem;
+
+                                   --container-width: 1100px;
+                                   }
+
+                                   /* =========================
+                                      RESET
+                                      ========================= */
+                                      *,
+                                      *::before,
+                                      *::after {
+                                        box-sizing: border-box;
+                                          margin: 0;
+                                            padding: 0;
+                                            }
+
+                                            body {
+                                              font-family: system-ui, -apple-system, sans-serif;
+                                                color: var(--color-text);
+                                                  background: var(--color-bg);
+                                                    line-height: 1.5;
+                                                    }
+
+                                                    /* =========================
+                                                       GLOBAL
+                                                       ========================= */
+                                                       .home section {
+                                                         padding: var(--spacing-xl) var(--spacing-md);
+                                                         }
+
+                                                         .hero__container,
+                                                         .problem__container,
+                                                         .solution__container,
+                                                         .benefits__container,
+                                                         .steps__container,
+                                                         .testimonials__container,
+                                                         .programs__container,
+                                                         .cta__container {
+                                                           max-width: var(--container-width);
+                                                             margin: 0 auto;
+                                                             }
+
+                                                             /* =========================
+                                                                TYPOGRAPHY
+                                                                ========================= */
+                                                                h1, h2, h3 {
+                                                                  color: var(--color-secondary);
+                                                                  }
+
+                                                                  .hero__title {
+                                                                    font-size: 2rem;
+                                                                      margin-bottom: var(--spacing-md);
+                                                                      }
+
+                                                                      .hero__subtitle {
+                                                                        font-size: 1rem;
+                                                                          color: var(--color-muted);
+                                                                            margin-bottom: var(--spacing-md);
+                                                                            }
+
+                                                                            h2 {
+                                                                              font-size: 1.5rem;
+                                                                                margin-bottom: var(--spacing-md);
+                                                                                }
+
+                                                                                h3 {
+                                                                                  font-size: 1.1rem;
+                                                                                    margin-bottom: var(--spacing-xs);
+                                                                                    }
+
+                                                                                    p {
+                                                                                      font-size: 0.95rem;
+                                                                                      }
+
+                                                                                      /* =========================
+                                                                                         BUTTONS
+                                                                                         ========================= */
+                                                                                         .btn {
+                                                                                           display: inline-block;
+                                                                                             padding: 0.75rem 1.25rem;
+                                                                                               border-radius: var(--radius-sm);
+                                                                                                 text-decoration: none;
+                                                                                                   font-size: 0.9rem;
+                                                                                                   }
+
+                                                                                                   .btn--primary {
+                                                                                                     background: var(--color-primary);
+                                                                                                       color: #fff;
+                                                                                                       }
+
+                                                                                                       .btn--secondary {
+                                                                                                         border: 1px solid var(--color-border);
+                                                                                                           color: var(--color-text);
+                                                                                                           }
+
+                                                                                                           /* =========================
+                                                                                                              HERO
+                                                                                                              ========================= */
+                                                                                                              .hero {
+                                                                                                                text-align: center;
+                                                                                                                  background: var(--color-bg-light);
+                                                                                                                  }
+
+                                                                                                                  .hero__list {
+                                                                                                                    list-style: none;
+                                                                                                                      margin-bottom: var(--spacing-md);
+                                                                                                                      }
+
+                                                                                                                      .hero__item {
+                                                                                                                        font-size: 0.9rem;
+                                                                                                                          margin-bottom: var(--spacing-xs);
+                                                                                                                          }
+
+                                                                                                                          .hero__actions {
+                                                                                                                            display: flex;
+                                                                                                                              flex-direction: column;
+                                                                                                                                gap: var(--spacing-sm);
+                                                                                                                                }
+
+                                                                                                                                /* =========================
+                                                                                                                                   PROBLEM
+                                                                                                                                   ========================= */
+                                                                                                                                   .problem__list {
+                                                                                                                                     list-style: disc;
+                                                                                                                                       padding-left: 1.2rem;
+                                                                                                                                         margin-bottom: var(--spacing-md);
+                                                                                                                                         }
+
+                                                                                                                                         .problem__text {
+                                                                                                                                           color: var(--color-muted);
+                                                                                                                                           }
+
+                                                                                                                                           /* =========================
+                                                                                                                                              SOLUTION
+                                                                                                                                              ========================= */
+                                                                                                                                              .solution__list {
+                                                                                                                                                list-style: disc;
+                                                                                                                                                  padding-left: 1.2rem;
+                                                                                                                                                  }
+
+                                                                                                                                                  /* =========================
+                                                                                                                                                     BENEFITS
+                                                                                                                                                     ========================= */
+                                                                                                                                                     .benefits {
+                                                                                                                                                       background: var(--color-bg-light);
+                                                                                                                                                       }
+
+                                                                                                                                                       .benefits__grid {
+                                                                                                                                                         display: grid;
+                                                                                                                                                           gap: var(--spacing-md);
+                                                                                                                                                           }
+
+                                                                                                                                                           .benefits__card {
+                                                                                                                                                             border: 1px solid var(--color-border);
+                                                                                                                                                               padding: var(--spacing-md);
+                                                                                                                                                                 border-radius: var(--radius-md);
+                                                                                                                                                                 }
+
+                                                                                                                                                                 /* =========================
+                                                                                                                                                                    STEPS
+                                                                                                                                                                    ========================= */
+                                                                                                                                                                    .steps__list {
+                                                                                                                                                                      display: grid;
+                                                                                                                                                                        gap: var(--spacing-md);
+                                                                                                                                                                        }
+
+                                                                                                                                                                        .steps__item {
+                                                                                                                                                                          border-left: 3px solid var(--color-primary);
+                                                                                                                                                                            padding-left: var(--spacing-md);
+                                                                                                                                                                            }
+
+                                                                                                                                                                            .steps__number {
+                                                                                                                                                                              font-weight: bold;
+                                                                                                                                                                                color: var(--color-primary);
+                                                                                                                                                                                }
+
+                                                                                                                                                                                /* =========================
+                                                                                                                                                                                   TESTIMONIALS
+                                                                                                                                                                                   ========================= */
+                                                                                                                                                                                   .testimonials {
+                                                                                                                                                                                     background: var(--color-bg-light);
+                                                                                                                                                                                     }
+
+                                                                                                                                                                                     .testimonials__list {
+                                                                                                                                                                                       display: grid;
+                                                                                                                                                                                         gap: var(--spacing-md);
+                                                                                                                                                                                         }
+
+                                                                                                                                                                                         .testimonials__item {
+                                                                                                                                                                                           border: 1px solid var(--color-border);
+                                                                                                                                                                                             padding: var(--spacing-md);
+                                                                                                                                                                                               border-radius: var(--radius-md);
+                                                                                                                                                                                               }
+
+                                                                                                                                                                                               .testimonials__text {
+                                                                                                                                                                                                 font-style: italic;
+                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                 /* =========================
+                                                                                                                                                                                                    PROGRAMS
+                                                                                                                                                                                                    ========================= */
+                                                                                                                                                                                                    .programs__grid {
+                                                                                                                                                                                                      display: grid;
+                                                                                                                                                                                                        gap: var(--spacing-md);
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .programs__card {
+                                                                                                                                                                                                          border: 1px solid var(--color-border);
+                                                                                                                                                                                                            padding: var(--spacing-md);
+                                                                                                                                                                                                              border-radius: var(--radius-md);
+                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                              /* =========================
+                                                                                                                                                                                                                 CTA
+                                                                                                                                                                                                                 ========================= */
+                                                                                                                                                                                                                 .cta {
+                                                                                                                                                                                                                   text-align: center;
+                                                                                                                                                                                                                     background: var(--color-primary);
+                                                                                                                                                                                                                       color: #fff;
+                                                                                                                                                                                                                       }
+
+                                                                                                                                                                                                                       .cta__title {
+                                                                                                                                                                                                                         color: #fff;
+                                                                                                                                                                                                                           margin-bottom: var(--spacing-sm);
+                                                                                                                                                                                                                           }
+
+                                                                                                                                                                                                                           .cta__text {
+                                                                                                                                                                                                                             margin-bottom: var(--spacing-md);
+                                                                                                                                                                                                                             }
+
+                                                                                                                                                                                                                             .cta__button {
+                                                                                                                                                                                                                               background: #fff;
+                                                                                                                                                                                                                                 color: var(--color-primary);
+                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                 /* =========================
+                                                                                                                                                                                                                                    RESPONSIVE
+                                                                                                                                                                                                                                    ========================= */
+
+                                                                                                                                                                                                                                    /* Tablet */
+                                                                                                                                                                                                                                    @media (min-width: 640px) {
+                                                                                                                                                                                                                                      .hero__title {
+                                                                                                                                                                                                                                          font-size: 2.5rem;
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                              h2 {
+                                                                                                                                                                                                                                                  font-size: 1.75rem;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                      .hero__actions {
+                                                                                                                                                                                                                                                          flex-direction: row;
+                                                                                                                                                                                                                                                              justify-content: center;
+                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                  .benefits__grid {
+                                                                                                                                                                                                                                                                      grid-template-columns: repeat(2, 1fr);
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                          .steps__list {
+                                                                                                                                                                                                                                                                              grid-template-columns: repeat(3, 1fr);
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                  .programs__grid {
+                                                                                                                                                                                                                                                                                      grid-template-columns: repeat(3, 1fr);
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                        /* Desktop */
+                                                                                                                                                                                                                                                                                        @media (min-width: 1024px) {
+                                                                                                                                                                                                                                                                                          .hero__title {
+                                                                                                                                                                                                                                                                                              font-size: 3rem;
+                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                  .hero__subtitle {
+                                                                                                                                                                                                                                                                                                      font-size: 1.1rem;
+                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                          .benefits__grid {
+                                                                                                                                                                                                                                                                                                              grid-template-columns: repeat(3, 1fr);
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                  .testimonials__list {
+                                                                                                                                                                                                                                                                                                                      grid-template-columns: repeat(2, 1fr);
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                        }
