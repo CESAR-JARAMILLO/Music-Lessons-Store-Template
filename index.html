@@ -9,6 +9,7 @@
       content="Fun, structured music lessons for kids in South Gate, CA. Build confidence, creativity, and real skills. Book a free trial lesson today."
     />
 
+    <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/home.css" />
   </head>
 
@@ -19,7 +20,7 @@
         <div class="hero__container">
           <div class="hero__image-wrapper">
             <img
-              src="https://placehold.co/600x400"
+              src="/images/home/arrow-home-hero.webp"
               alt="Kids learning music"
               class="hero__image"
             />
@@ -58,31 +59,56 @@
       <!-- PROBLEM -->
       <section class="home__problem problem">
         <div class="problem__container">
-          <div class="problem__image-wrapper">
-            <img
-              src="https://placehold.co/500x300"
-              alt="Child using tablet"
-              class="problem__image"
-            />
+          <h2 class="problem__title">
+            It’s Hard to Find Activities That Truly Engage Kids Today
+          </h2>
+
+          <div class="problem__grid">
+            <div class="problem__card">
+              <img
+                src="/images/home/home-icon-confidence.webp"
+                alt=""
+                class="problem__icon"
+              />
+              <p class="problem__card-text">
+                Kids spending more time on devices
+              </p>
+            </div>
+
+            <div class="problem__card">
+              <img
+                src="/images/home/home-icon-focus.webp"
+                alt=""
+                class="problem__icon"
+              />
+              <p class="problem__card-text">Short attention spans</p>
+            </div>
+
+            <div class="problem__card">
+              <img
+                src="/images/home/home-icon-creativity.webp"
+                alt=""
+                class="problem__icon"
+              />
+              <p class="problem__card-text">Activities that feel like chores</p>
+            </div>
+
+            <div class="problem__card">
+              <img
+                src="/images/home/home-icon-achievement.webp"
+                alt=""
+                class="problem__icon"
+              />
+              <p class="problem__card-text">
+                Hard to find something that sticks
+              </p>
+            </div>
           </div>
 
-          <div class="problem__content">
-            <h2 class="problem__title">
-              It’s Hard to Find Activities That Truly Engage Kids Today
-            </h2>
-
-            <ul class="problem__list">
-              <li class="problem__item">Kids spending more time on devices</li>
-              <li class="problem__item">Short attention spans</li>
-              <li class="problem__item">Activities that feel like chores</li>
-              <li class="problem__item">Hard to find something that sticks</li>
-            </ul>
-
-            <p class="problem__text">
-              You don’t just want to take something away — you want to give them
-              something better.
-            </p>
-          </div>
+          <p class="problem__closing">
+            You don’t just want to take something away — you want to give them
+            something better.
+          </p>
         </div>
       </section>
 
@@ -91,7 +117,7 @@
         <div class="solution__container">
           <div class="solution__image-wrapper">
             <img
-              src="https://placehold.co/500x300"
+              src="/images/home/arrow-home-solution.webp"
               alt="Kids playing instruments"
               class="solution__image"
             />
@@ -114,6 +140,10 @@
               <li class="solution__item">Encouraging instructors</li>
               <li class="solution__item">Small groups or 1-on-1 attention</li>
             </ul>
+
+            <a href="#programs" class="solution__cta btn btn--secondary"
+              >Learn more</a
+            >
           </div>
         </div>
       </section>
@@ -123,64 +153,47 @@
         <div class="benefits__container">
           <h2 class="benefits__title">What Your Child Gains From Music</h2>
 
-          <div class="benefits__grid">
-            <div class="benefits__card">
-              <img
-                src="https://placehold.co/80x80"
-                alt=""
-                class="benefits__icon"
-              />
-              <h3 class="benefits__card-title">Confidence</h3>
-              <p class="benefits__card-text">
+          <div class="benefits__blocks">
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">Confidence</h3>
+              <p class="benefits__block-text">
                 They build confidence as they improve
               </p>
             </div>
 
-            <div class="benefits__card">
-              <img
-                src="https://placehold.co/80x80"
-                alt=""
-                class="benefits__icon"
-              />
-              <h3 class="benefits__card-title">Focus & Discipline</h3>
-              <p class="benefits__card-text">
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">Focus &amp; Discipline</h3>
+              <p class="benefits__block-text">
                 Improves attention and consistency
               </p>
             </div>
 
-            <div class="benefits__card">
-              <img
-                src="https://placehold.co/80x80"
-                alt=""
-                class="benefits__icon"
-              />
-              <h3 class="benefits__card-title">Creativity</h3>
-              <p class="benefits__card-text">
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">Creativity</h3>
+              <p class="benefits__block-text">
                 A positive outlet for expression
               </p>
             </div>
 
-            <div class="benefits__card">
-              <img
-                src="https://placehold.co/80x80"
-                alt=""
-                class="benefits__icon"
-              />
-              <h3 class="benefits__card-title">Achievement</h3>
-              <p class="benefits__card-text">
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">Achievement</h3>
+              <p class="benefits__block-text">
                 Real progress and accomplishment
               </p>
             </div>
 
-            <div class="benefits__card">
-              <img
-                src="https://placehold.co/80x80"
-                alt=""
-                class="benefits__icon"
-              />
-              <h3 class="benefits__card-title">Better Use of Time</h3>
-              <p class="benefits__card-text">
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">Better Use of Time</h3>
+              <p class="benefits__block-text">
                 Something they enjoy more than screens
+              </p>
+            </div>
+            <div class="benefits__block">
+              <h3 class="benefits__block-title">
+                Improved Memory & Learning Skills
+              </h3>
+              <p class="benefits__block-text">
+                They develop stronger memory and perform better in school
               </p>
             </div>
           </div>
@@ -195,22 +208,20 @@
           <div class="steps__list">
             <div class="steps__item">
               <img
-                src="https://placehold.co/60x60"
+                src="/images/home/home-step1.webp"
                 alt=""
                 class="steps__icon"
               />
-              <span class="steps__number">1</span>
               <h3 class="steps__item-title">Book a Free Trial</h3>
               <p class="steps__item-text">Choose a time that works for you</p>
             </div>
 
             <div class="steps__item">
               <img
-                src="https://placehold.co/60x60"
+                src="/images/home/home-step2.webp"
                 alt=""
                 class="steps__icon"
               />
-              <span class="steps__number">2</span>
               <h3 class="steps__item-title">Meet the Instructor</h3>
               <p class="steps__item-text">
                 We match your child with the right teacher
@@ -219,11 +230,10 @@
 
             <div class="steps__item">
               <img
-                src="https://placehold.co/60x60"
+                src="/images/home/home-step3.webp"
                 alt=""
                 class="steps__icon"
               />
-              <span class="steps__number">3</span>
               <h3 class="steps__item-title">Start Learning</h3>
               <p class="steps__item-text">Fun, structured lessons begin</p>
             </div>
@@ -241,7 +251,7 @@
           <div class="testimonials__list">
             <blockquote class="testimonials__item">
               <img
-                src="https://placehold.co/60x60"
+                src="/images/home/single-parent-avatar.webp"
                 alt="Parent"
                 class="testimonials__avatar"
               />
@@ -253,7 +263,7 @@
 
             <blockquote class="testimonials__item">
               <img
-                src="https://placehold.co/60x60"
+                src="/images/home/family-avatar.webp"
                 alt="Parent"
                 class="testimonials__avatar"
               />
@@ -268,46 +278,57 @@
 
       <!-- PROGRAMS -->
       <section id="programs" class="home__programs programs">
-        <div class="programs__container">
-          <h2 class="programs__title">Programs for Every Stage</h2>
+        <div class="programs__container container">
+          <header class="programs__header">
+            <h2 class="programs__title">
+              Private Music Lessons That Actually Keep Kids Engaged
+            </h2>
+            <p class="programs__intro">
+              Personalized, one-on-one instruction designed to build confidence,
+              consistency, and real progress—without feeling like a chore.
+            </p>
+          </header>
 
-          <div class="programs__grid">
-            <div class="programs__card">
-              <div class="programs__image-wrapper">
-                <img
-                  src="https://placehold.co/300x200"
-                  alt=""
-                  class="programs__image"
-                />
-              </div>
-              <h3 class="programs__card-title">Beginner Program</h3>
-              <p class="programs__card-text">
-                Perfect for kids just getting started
+          <div class="programs__content">
+            <!-- LEFT -->
+            <div class="programs__left">
+              <h3 class="programs__subheading">What we teach</h3>
+
+              <p class="programs__instruments">
+                Guitar, Piano, Bass, Violin, Voice, Drums, Bajo Quinto,
+                Accordion, Saxophone, Clarinet, Flute, Cello, Viola — plus music
+                theory, composition, and songwriting.
+              </p>
+
+              <p class="programs__support">
+                Not sure where to start? We’ll guide you to the right instrument
+                and teacher.
               </p>
             </div>
 
-            <div class="programs__card">
-              <div class="programs__image-wrapper">
-                <img
-                  src="https://placehold.co/300x200"
-                  alt=""
-                  class="programs__image"
-                />
+            <!-- RIGHT (PRICING BLOCK) -->
+            <div class="programs__right">
+              <div class="programs__price">
+                <span class="programs__price-main">$104</span>
+                <span class="programs__price-sub">/month</span>
               </div>
-              <h3 class="programs__card-title">Intermediate Program</h3>
-              <p class="programs__card-text">Builds technique and confidence</p>
-            </div>
 
-            <div class="programs__card">
-              <div class="programs__image-wrapper">
-                <img
-                  src="https://placehold.co/300x200"
-                  alt=""
-                  class="programs__image"
-                />
-              </div>
-              <h3 class="programs__card-title">Private Lessons</h3>
-              <p class="programs__card-text">1-on-1 personalized instruction</p>
+              <p class="programs__price-detail">
+                Weekly 30-minute private lessons
+              </p>
+
+              <ul class="programs__list">
+                <li>One-time $40 registration fee</li>
+                <li>Personalized lesson plans</li>
+                <li>Encouraging, experienced instructors</li>
+                <li>Parents welcome to sit in</li>
+              </ul>
+
+              <p class="programs__trust">Making musicians since 1988</p>
+
+              <a href="#contact" class="btn btn--primary programs__btn">
+                Book a Free Trial Lesson
+              </a>
             </div>
           </div>
         </div>
