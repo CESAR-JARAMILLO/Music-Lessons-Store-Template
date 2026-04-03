@@ -185,15 +185,66 @@
   color: var(--color-secondary);
 }
 
+.problem__outro {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  width: 100%;
+}
+
+.problem__outro-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
 .problem__closing {
-  margin-top: var(--spacing-lg);
-  margin-inline: auto;
+  margin: 0;
+  max-width: 26rem;
+  text-align: center;
+  font-size: clamp(1.05rem, 0.5vw + 1rem, 1.2rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--color-secondary);
+}
+
+.problem__support {
+  margin: 0;
+  max-width: 40rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.problem__support-extra {
+  margin: 0;
   max-width: 36rem;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.problem__transition {
+  margin: 0;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgb(229 231 235 / 0.85);
+  width: 100%;
+  max-width: 28rem;
+  text-align: center;
+  font-size: 0.88rem;
   font-weight: 500;
-  line-height: 1.55;
-  color: var(--color-secondary);
+  line-height: 1.5;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
 }
 
 /* =========================
@@ -500,16 +551,32 @@
   margin-bottom: var(--spacing-md);
 }
 
-.programs__instruments {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--color-text);
-  margin-bottom: var(--spacing-md);
+/* Instruments grouped display */
+.programs__groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.programs__group {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.programs__group-title {
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-right: 0.25rem;
+}
+
+.programs__group-items {
+  color: var(--color-muted);
 }
 
 .programs__support {
   font-size: 0.9rem;
   color: var(--color-muted);
+  margin-top: var(--spacing-md);
 }
 
 /* RIGHT SIDE (PRICING BLOCK) */
