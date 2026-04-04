@@ -23,6 +23,7 @@
 
 .form-section__grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: var(--spacing-xl);
   align-items: start;
 }
@@ -315,7 +316,7 @@
 /* =========================
    RESPONSIVE
 ========================= */
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .form-section__grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);

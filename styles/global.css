@@ -510,8 +510,9 @@ body.page section.hero {
   overflow: hidden;
   box-shadow: var(--shadow-image);
   aspect-ratio: 3 / 2;
-  max-width: 560px;
+  max-width: min(100%, 560px);
   margin-inline: auto;
+  width: 100%;
 }
 
 .hero__image {
@@ -573,6 +574,17 @@ body.page section.hero {
 
   .hero__content {
     order: -1;
+  }
+
+  /* Keep hero photos from dominating narrow viewports */
+  .hero__image-wrapper {
+    max-width: min(100%, 22rem);
+  }
+}
+
+@media (max-width: 479px) {
+  .hero__image-wrapper {
+    max-width: min(100%, 17.5rem);
   }
 }
 

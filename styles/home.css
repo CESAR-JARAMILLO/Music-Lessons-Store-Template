@@ -220,7 +220,8 @@
   overflow: hidden;
   box-shadow: var(--shadow-cta-image);
   aspect-ratio: 5 / 3;
-  max-width: 520px;
+  max-width: min(100%, 520px);
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -465,6 +466,7 @@
 /* Layout */
 .programs__content {
   display: grid;
+  grid-template-columns: 1fr;
   gap: var(--spacing-xl);
 }
 
@@ -598,8 +600,8 @@
   font-weight: 600;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
+/* Side-by-side instruments + pricing (wide screens only) */
+@media (min-width: 900px) {
   .programs__content {
     grid-template-columns: 1.2fr 0.8fr;
     align-items: start;
@@ -688,6 +690,16 @@
   .solution__content,
   .cta__content {
     order: -1;
+  }
+
+  .cta__image-wrapper {
+    max-width: min(100%, 22rem);
+  }
+}
+
+@media (max-width: 479px) {
+  .cta__image-wrapper {
+    max-width: min(100%, 17.5rem);
   }
 }
 
