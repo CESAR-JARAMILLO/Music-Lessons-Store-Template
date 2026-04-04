@@ -1,31 +1,133 @@
 /* =========================
-   CSS VARIABLES
+   CSS VARIABLES (WOOD THEME)
 ========================= */
 :root {
-  --color-primary: #2563eb;
-  --color-primary-light: #3b82f6;
-  --color-secondary: #111827;
-  --color-text: #1f2937;
-  --color-muted: #6b7280;
-  --color-bg: #ffffff;
-  --color-bg-light: #f9fafb;
-  --color-border: #e5e7eb;
+  /* Brand (refined wood system) */
+  --color-primary: #b87344; /* polished wood */
+  --color-primary-light: #d89a5b; /* lighter varnish */
+  --color-primary-dark: #6f3f1f; /* deeper, richer wood (improved contrast) */
 
+  /* Accent (harmonized warm tone) */
+  --color-accent: #e39a4b; /* warm amber, blends with wood tones */
+
+  /* Core text (warm but readable) */
+  --color-secondary: #3e2618; /* deep brown */
+  --color-text: #5a3824; /* softened text */
+  --color-muted: #8c6a52; /* muted brown */
+
+  /* Backgrounds (light wood / paper tones) */
+  --color-bg: #fffaf5;
+  --color-bg-light: #fdf6ee;
+  --color-border: #e9d8c7;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-glass: color-mix(
+    in srgb,
+    var(--color-surface) 75%,
+    transparent
+  );
+
+  /* Section backgrounds */
+  --color-bg-muted: #f7efe6;
+  --color-bg-muted-deep: #efe2d3;
+  --color-bg-wash: #faf4ec;
+
+  /* Borders */
+  --color-border-soft: rgb(233 216 199 / 0.8);
+  --color-border-muted: rgb(233 216 199 / 0.7);
+  --color-border-emphasis: #d6bfa7;
+
+  /* Text on primary */
+  --color-on-primary: #ffffff;
+
+  /* Shadows (warmer tone instead of blue/black) */
+  --rgb-shadow: 60 38 24;
+  --rgb-black: 0 0 0;
+
+  /* Primary accents */
+  --color-primary-tint: color-mix(
+    in srgb,
+    var(--color-primary) 12%,
+    transparent
+  );
+  --color-primary-ring: color-mix(
+    in srgb,
+    var(--color-primary) 20%,
+    transparent
+  );
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(
+    165deg,
+    var(--color-bg-muted) 0%,
+    var(--color-bg-muted-deep) 45%,
+    var(--color-bg-light) 100%
+  );
+
+  --gradient-section-to-surface: linear-gradient(
+    180deg,
+    var(--color-bg-muted) 0%,
+    var(--color-surface) 100%
+  );
+
+  --gradient-section-muted: linear-gradient(
+    180deg,
+    var(--color-bg-muted) 0%,
+    var(--color-bg-muted-deep) 100%
+  );
+
+  --gradient-benefits: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-bg-muted-deep) 85%, transparent) 0%,
+    var(--color-bg-muted) 100%
+  );
+
+  --gradient-programs: linear-gradient(
+    180deg,
+    var(--color-bg-wash) 0%,
+    var(--color-surface) 100%
+  );
+
+  /* Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
 
+  /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 0.75rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
 
+  /* Layout */
   --container-width: 1100px;
 
+  /* Shadows */
   --shadow-image:
-    0 1px 3px rgb(15 23 42 / 0.08), 0 12px 28px -8px rgb(15 23 42 / 0.12);
+    0 1px 3px rgb(var(--rgb-shadow) / 0.08),
+    0 12px 28px -8px rgb(var(--rgb-shadow) / 0.12);
+
   --shadow-card:
-    0 1px 2px rgb(15 23 42 / 0.06), 0 8px 24px -6px rgb(15 23 42 / 0.1);
+    0 1px 2px rgb(var(--rgb-shadow) / 0.06),
+    0 8px 24px -6px rgb(var(--rgb-shadow) / 0.1);
+
+  --shadow-card-hover:
+    0 2px 8px rgb(var(--rgb-shadow) / 0.08),
+    0 16px 32px -12px rgb(var(--rgb-shadow) / 0.14);
+
+  --shadow-cta-image:
+    0 4px 24px rgb(var(--rgb-black) / 0.15),
+    0 1px 3px rgb(var(--rgb-black) / 0.1);
+
+  --shadow-steps-icon: 0 2px 8px rgb(var(--rgb-shadow) / 0.08);
+
+  --shadow-programs-panel:
+    0 1px 2px rgb(var(--rgb-shadow) / 0.04),
+    0 12px 28px -10px rgb(var(--rgb-shadow) / 0.08);
+
+  --shadow-cta-button: 0 4px 14px rgb(var(--rgb-black) / 0.15);
+  --shadow-cta-button-hover: 0 6px 20px rgb(var(--rgb-black) / 0.2);
 }
 
 /* =========================
@@ -85,7 +187,7 @@ p {
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
 }
 
 .btn--secondary {
