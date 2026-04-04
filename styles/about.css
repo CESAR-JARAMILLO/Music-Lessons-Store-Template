@@ -1,0 +1,330 @@
+/* About page (tokens in global.css; mirrors home.css / lessons.css patterns) */
+
+/* =========================
+   LAYOUT
+========================= */
+.about section {
+  padding: clamp(2.5rem, 6vw, 4rem) var(--spacing-md);
+}
+
+.story__container,
+.mission__container,
+.instructors__container,
+.trust__container,
+.cta__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* =========================
+   SHARED TITLES
+========================= */
+.story__title,
+.mission__title,
+.instructors__title,
+.trust__title {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-lg);
+  font-size: clamp(1.5rem, 2vw + 1rem, 1.85rem);
+  max-width: 28ch;
+}
+
+.instructors__title {
+  margin-bottom: var(--spacing-md);
+}
+
+.trust__title {
+  max-width: 32ch;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* =========================
+   STORY
+========================= */
+.story {
+  background: var(--color-bg);
+}
+
+.story__content {
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+.story__text {
+  margin: 0 0 var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.story__text:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   MISSION / APPROACH
+========================= */
+.mission {
+  background: var(--gradient-section-to-surface);
+}
+
+.mission__grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.mission__item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  border-top: 3px solid var(--color-primary);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mission__item:hover {
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary) 35%,
+    var(--color-border)
+  );
+  box-shadow: var(--shadow-card-hover);
+}
+
+.mission__item-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-secondary);
+}
+
+.mission__item-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+/* =========================
+   INSTRUCTORS
+========================= */
+.instructors {
+  background: var(--color-bg);
+}
+
+.instructors__content {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.instructors__text {
+  margin: 0 0 var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.instructors__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.instructors__grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.instructors__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.instructors__card:hover {
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary) 28%,
+    var(--color-border)
+  );
+  box-shadow: var(--shadow-card-hover);
+}
+
+.instructors__image {
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-sm);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-surface);
+  box-shadow:
+    0 0 0 1px var(--color-border),
+    var(--shadow-card);
+}
+
+.instructors__name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* =========================
+   TRUST / STATS
+========================= */
+.trust {
+  background: var(--gradient-section-muted);
+}
+
+.trust__grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.trust__item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg) var(--spacing-md);
+  text-align: center;
+  box-shadow: var(--shadow-card);
+}
+
+.trust__number {
+  margin: 0 0 var(--spacing-xs);
+  font-size: clamp(1.5rem, 3vw + 1rem, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.trust__label {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--color-muted);
+}
+
+/* =========================
+   CTA
+========================= */
+.about .cta {
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.about .cta__title {
+  color: var(--color-on-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-sm);
+  max-width: 24ch;
+  margin-inline: auto;
+}
+
+.about .cta__text {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  opacity: 0.95;
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.about .cta .btn--primary {
+  background: var(--color-surface);
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-cta-button);
+  border: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    color 0.15s ease;
+}
+
+.about .cta .btn--primary:hover {
+  transform: translateY(-1px);
+  color: var(--color-primary);
+  box-shadow:
+    var(--shadow-cta-button-hover),
+    0 0 0 1px color-mix(in srgb, var(--color-accent) 55%, transparent);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (min-width: 640px) {
+  .mission__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instructors__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .trust__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .story__title,
+  .mission__title,
+  .instructors__title,
+  .trust__title {
+    max-width: none;
+    margin-inline: 0;
+  }
+
+  .story__title,
+  .mission__title,
+  .instructors__title {
+    text-align: left;
+  }
+
+  .story__content {
+    margin-inline: 0;
+    max-width: 42rem;
+  }
+
+  .mission__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .instructors__content {
+    text-align: left;
+    margin-inline: 0;
+    max-width: 42rem;
+  }
+
+  .instructors__title {
+    text-align: left;
+  }
+
+  .trust__title {
+    text-align: center;
+  }
+
+  .about .cta__container {
+    max-width: 40rem;
+  }
+}

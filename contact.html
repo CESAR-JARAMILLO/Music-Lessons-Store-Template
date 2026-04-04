@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Free Trial Lesson | Arrow Music Center South Gate</title>
+    <meta
+      name="description"
+      content="Book a free trial music lesson in South Gate, CA. Simple scheduling, beginner-friendly, and no commitment required. Get started today."
+    />
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+
+  <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          href="index.html"
+          class="site-header__brand"
+          aria-label="Arrow Music Center, home"
+          >Arrow Music Center</a
+        >
+        <input type="checkbox" id="site-nav-toggle" class="site-header__checkbox" />
+        <label
+          for="site-nav-toggle"
+          class="site-header__menu-btn"
+          aria-label="Open menu"
+        >
+          <span class="site-header__menu-icon"></span>
+        </label>
+        <label for="site-nav-toggle" class="site-header__backdrop" aria-hidden="true"></label>
+        <nav class="site-header__nav" aria-label="Main navigation">
+          <ul class="site-header__list">
+            <li><a href="index.html" class="site-header__link">Home</a></li>
+            <li>
+              <a href="music-lessons.html" class="site-header__link"
+                >Music Lessons</a
+              >
+            </li>
+            <li><a href="about.html" class="site-header__link">About</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="site-header__link"
+                aria-current="page"
+                >Contact</a
+              >
+            </li>
+            <li class="site-header__item--cta">
+              <a
+                href="contact.html#booking-form"
+                class="site-header__cta btn btn--primary"
+                >Book a Trial</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="contact" id="main">
+      <!-- HERO -->
+      <section
+        class="contact__hero hero"
+        aria-labelledby="contact-hero-heading"
+      >
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title" id="contact-hero-heading">
+              Book Your Child’s Free Trial Lesson
+            </h1>
+
+            <p class="hero__subtitle">
+              Simple, no pressure, and no commitment. Choose a time that works
+              for you and see how engaging music lessons can be.
+            </p>
+
+            <ul class="hero__list">
+              <li class="hero__item">Beginner-friendly</li>
+              <li class="hero__item">No experience needed</li>
+              <li class="hero__item">Try before committing</li>
+            </ul>
+          </div>
+
+          <div class="hero__image-wrapper">
+            <img
+              src="images/home/contact-hero.webp"
+              alt="Parent and child scheduling a music lesson at Arrow Music Center"
+              class="hero__image"
+              width="560"
+              height="373"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM SECTION -->
+      <section
+        id="booking-form"
+        class="contact__form-section form-section"
+        aria-labelledby="booking-form-title"
+      >
+        <div class="form-section__container">
+          <div class="form-section__grid">
+            <!-- LEFT (FORM) -->
+            <div class="form-section__left">
+              <h2 id="booking-form-title" class="form-section__title">
+                Schedule Your Free Trial
+              </h2>
+
+              <form
+                class="form"
+                aria-label="Request a free trial lesson"
+                name="trial-booking"
+              >
+                <div class="form__group">
+                  <label class="form__label" for="trial-parent-name"
+                    >Parent Name</label
+                  >
+                  <input
+                    id="trial-parent-name"
+                    name="parentName"
+                    type="text"
+                    class="form__input"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="trial-email">Email</label>
+                  <input
+                    id="trial-email"
+                    name="email"
+                    type="email"
+                    class="form__input"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="trial-phone">Phone</label>
+                  <input
+                    id="trial-phone"
+                    name="phone"
+                    type="tel"
+                    class="form__input"
+                    placeholder="(555) 555-5555"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="trial-child-age"
+                    >Child’s Age</label
+                  >
+                  <input
+                    id="trial-child-age"
+                    name="childAge"
+                    type="number"
+                    class="form__input"
+                    placeholder="Age"
+                    min="1"
+                    max="18"
+                    required
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="trial-instrument"
+                    >Instrument Interest</label
+                  >
+                  <select
+                    id="trial-instrument"
+                    name="instrument"
+                    class="form__select"
+                    required
+                  >
+                    <option value="">Select an option</option>
+                    <option value="piano">Piano</option>
+                    <option value="guitar">Guitar</option>
+                    <option value="drums">Drums</option>
+                    <option value="voice">Voice</option>
+                    <option value="unsure">Not Sure</option>
+                  </select>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="trial-schedule"
+                    >Preferred Days/Times</label
+                  >
+                  <textarea
+                    id="trial-schedule"
+                    name="scheduleNotes"
+                    class="form__textarea"
+                    placeholder="Let us know what works best"
+                    rows="4"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary form__submit">
+                  Book Free Trial
+                </button>
+              </form>
+            </div>
+
+            <!-- RIGHT (TRUST / INFO) -->
+            <div class="form-section__right">
+              <div class="contact-info">
+                <h3 class="contact-info__title">What Happens Next?</h3>
+
+                <ul class="contact-info__list">
+                  <li class="contact-info__item">
+                    We’ll contact you to confirm a time
+                  </li>
+                  <li class="contact-info__item">
+                    We match your child with the right instructor
+                  </li>
+                  <li class="contact-info__item">
+                    You come in and experience the lesson
+                  </li>
+                </ul>
+
+                <p class="contact-info__note">
+                  No commitment required. Just come in and see if it’s the right
+                  fit.
+                </p>
+              </div>
+
+              <div class="contact-details">
+                <h3 class="contact-details__title">Contact Information</h3>
+
+                <p class="contact-details__item">South Gate, CA</p>
+
+                <p class="contact-details__item">(123) 456-7890</p>
+
+                <p class="contact-details__item">info@arrowmusiccenter.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OBJECTION HANDLING -->
+      <section
+        class="contact__faq faq"
+        aria-labelledby="contact-faq-heading"
+      >
+        <div class="faq__container">
+          <h2 class="faq__title" id="contact-faq-heading">
+            Still Not Sure? That’s Okay.
+          </h2>
+
+          <div class="faq__list">
+            <div class="faq__item">
+              <h3 class="faq__question">What if my child doesn’t like it?</h3>
+              <p class="faq__answer">
+                That’s exactly why we offer a free trial—so you can try it
+                risk-free.
+              </p>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__question">
+                Do we need an instrument before starting?
+              </h3>
+              <p class="faq__answer">
+                Not at all. We’ll guide you on what to get after the trial.
+              </p>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__question">Is there any commitment?</h3>
+              <p class="faq__answer">
+                No commitment. Just a chance to see if it’s the right fit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="contact__cta cta" aria-labelledby="contact-cta-heading">
+        <div class="cta__container">
+          <h2 class="cta__title" id="contact-cta-heading">
+            Ready to Get Started?
+          </h2>
+
+          <p class="cta__text">Book your child’s free trial lesson today.</p>
+
+          <a href="#booking-form" class="btn btn--primary"> Book Now </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__col site-footer__col--brand">
+          <p class="site-footer__name">Arrow Music Center</p>
+          <p class="site-footer__tagline">
+            Music lessons for kids in South Gate, CA
+          </p>
+        </div>
+        <nav class="site-footer__col site-footer__nav" aria-label="Footer">
+          <p class="site-footer__heading">Explore</p>
+          <ul class="site-footer__list">
+            <li><a href="index.html" class="site-footer__link">Home</a></li>
+            <li>
+              <a href="music-lessons.html" class="site-footer__link"
+                >Music Lessons</a
+              >
+            </li>
+            <li><a href="about.html" class="site-footer__link">About</a></li>
+            <li>
+              <a href="contact.html" class="site-footer__link" aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="site-footer__col site-footer__col--contact">
+          <p class="site-footer__heading">Contact</p>
+          <p class="site-footer__text">South Gate, CA</p>
+          <p class="site-footer__text">
+            <a href="tel:+11234567890" class="site-footer__link"
+              >(123) 456-7890</a
+            >
+          </p>
+          <p class="site-footer__text">
+            <a href="mailto:info@arrowmusiccenter.com" class="site-footer__link"
+              >info@arrowmusiccenter.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="site-footer__bar">
+        <p class="site-footer__copy">
+          &copy; 2026 Arrow Music Center. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
