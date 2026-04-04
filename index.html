@@ -14,20 +14,70 @@
   </head>
 
   <body class="page">
-    <main class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a
+          href="index.html"
+          class="site-header__brand"
+          aria-label="Arrow Music Center, home"
+          >Arrow Music Center</a
+        >
+        <input type="checkbox" id="site-nav-toggle" class="site-header__checkbox" />
+        <label
+          for="site-nav-toggle"
+          class="site-header__menu-btn"
+          aria-label="Open menu"
+        >
+          <span class="site-header__menu-icon"></span>
+        </label>
+        <label for="site-nav-toggle" class="site-header__backdrop" aria-hidden="true"></label>
+        <nav class="site-header__nav" aria-label="Main navigation">
+          <ul class="site-header__list">
+            <li>
+              <a href="index.html" class="site-header__link" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="music-lessons.html" class="site-header__link"
+                >Music Lessons</a
+              >
+            </li>
+            <li><a href="about.html" class="site-header__link">About</a></li>
+            <li>
+              <a href="contact.html" class="site-header__link">Contact</a>
+            </li>
+            <li class="site-header__item--cta">
+              <a
+                href="contact.html#booking-form"
+                class="site-header__cta btn btn--primary"
+                >Book a Trial</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="home" id="main">
       <!-- HERO -->
-      <section class="home__hero hero">
+      <section
+        class="home__hero hero"
+        aria-labelledby="home-hero-heading"
+      >
         <div class="hero__container">
           <div class="hero__image-wrapper">
             <img
               src="images/home/arrow-home-hero.webp"
-              alt="Kids learning music"
+              alt="Children smiling during a group music lesson at Arrow Music Center"
               class="hero__image"
+              width="560"
+              height="373"
             />
           </div>
 
           <div class="hero__content">
-            <h1 class="hero__title">
+            <h1 class="hero__title" id="home-hero-heading">
               Help Your Child Discover a Skill They’ll Love
             </h1>
 
@@ -45,7 +95,9 @@
             </ul>
 
             <div class="hero__actions">
-              <a href="#contact" class="hero__cta btn btn--primary"
+              <a
+                href="contact.html#booking-form"
+                class="hero__cta btn btn--primary"
                 >Book a Free Trial Lesson</a
               >
               <a href="#programs" class="hero__cta btn btn--secondary"
@@ -57,9 +109,12 @@
       </section>
 
       <!-- PROBLEM -->
-      <section class="home__problem problem">
+      <section
+        class="home__problem problem"
+        aria-labelledby="problem-heading"
+      >
         <div class="problem__container">
-          <h2 class="problem__title">
+          <h2 class="problem__title" id="problem-heading">
             It’s Hard to Find Activities That Truly Engage Kids Today
           </h2>
 
@@ -67,7 +122,7 @@
             <div class="problem__card">
               <img
                 src="images/home/problem-card-1.webp"
-                alt=""
+                alt="Illustration: kids and screen time"
                 class="problem__icon"
               />
               <p class="problem__card-text">
@@ -78,7 +133,7 @@
             <div class="problem__card">
               <img
                 src="images/home/problem-card-2.webp"
-                alt=""
+                alt="Illustration: short attention span"
                 class="problem__icon"
               />
               <p class="problem__card-text">Short attention spans</p>
@@ -87,7 +142,7 @@
             <div class="problem__card">
               <img
                 src="images/home/problem-card-3.webp"
-                alt=""
+                alt="Illustration: activities that feel like chores"
                 class="problem__icon"
               />
               <p class="problem__card-text">Activities that feel like chores</p>
@@ -96,7 +151,7 @@
             <div class="problem__card">
               <img
                 src="images/home/problem-card-4.webp"
-                alt=""
+                alt="Illustration: hard to find something that sticks"
                 class="problem__icon"
               />
               <p class="problem__card-text">
@@ -129,18 +184,23 @@
       </section>
 
       <!-- SOLUTION -->
-      <section class="home__solution solution">
+      <section
+        class="home__solution solution"
+        aria-labelledby="solution-heading"
+      >
         <div class="solution__container">
           <div class="solution__image-wrapper">
             <img
               src="images/home/arrow-home-solution.webp"
-              alt="Kids playing instruments"
+              alt="Children learning guitar and drums together in a lesson at Arrow Music Center"
               class="solution__image"
+              width="560"
+              height="373"
             />
           </div>
 
           <div class="solution__content">
-            <h2 class="solution__title">
+            <h2 class="solution__title" id="solution-heading">
               A Place Where Kids Stay Engaged and Keep Growing
             </h2>
 
@@ -217,15 +277,17 @@
       </section>
 
       <!-- HOW IT WORKS -->
-      <section class="home__steps steps">
+      <section class="home__steps steps" aria-labelledby="steps-heading">
         <div class="steps__container">
-          <h2 class="steps__title">Getting Started Is Simple</h2>
+          <h2 class="steps__title" id="steps-heading">
+            Getting Started Is Simple
+          </h2>
 
           <div class="steps__list">
             <div class="steps__item">
               <img
                 src="images/home/step-1-icon.webp"
-                alt=""
+                alt="Icon for step 1: book a free trial"
                 class="steps__icon"
               />
               <h3 class="steps__item-title">Book a Free Trial</h3>
@@ -235,7 +297,7 @@
             <div class="steps__item">
               <img
                 src="images/home/step-2-icon.webp"
-                alt=""
+                alt="Icon for step 2: meet the instructor"
                 class="steps__icon"
               />
               <h3 class="steps__item-title">Meet the Instructor</h3>
@@ -247,7 +309,7 @@
             <div class="steps__item">
               <img
                 src="images/home/step-3-icon.webp"
-                alt=""
+                alt="Icon for step 3: start learning"
                 class="steps__icon"
               />
               <h3 class="steps__item-title">Start Learning</h3>
@@ -258,9 +320,12 @@
       </section>
 
       <!-- TESTIMONIALS -->
-      <section class="home__testimonials testimonials">
+      <section
+        class="home__testimonials testimonials"
+        aria-labelledby="testimonials-heading"
+      >
         <div class="testimonials__container">
-          <h2 class="testimonials__title">
+          <h2 class="testimonials__title" id="testimonials-heading">
             Families in South Gate Are Seeing the Difference
           </h2>
 
@@ -268,7 +333,7 @@
             <blockquote class="testimonials__item">
               <img
                 src="images/home/single-parent-avatar.webp"
-                alt="Parent"
+                alt="Portrait of a parent who shared a testimonial"
                 class="testimonials__avatar"
               />
               <p class="testimonials__text">
@@ -280,7 +345,7 @@
             <blockquote class="testimonials__item">
               <img
                 src="images/home/family-avatar.webp"
-                alt="Parent"
+                alt="Portrait of a family who shared a testimonial"
                 class="testimonials__avatar"
               />
               <p class="testimonials__text">
@@ -371,7 +436,10 @@
 
               <p class="programs__trust">Making musicians since 1988</p>
 
-              <a href="#contact" class="btn btn--primary programs__btn">
+              <a
+                href="contact.html#booking-form"
+                class="btn btn--primary programs__btn"
+              >
                 Book a Free Trial Lesson
               </a>
             </div>
@@ -380,18 +448,24 @@
       </section>
 
       <!-- FINAL CTA -->
-      <section id="contact" class="home__cta cta">
+      <section
+        id="contact"
+        class="home__cta cta"
+        aria-labelledby="home-cta-heading"
+      >
         <div class="cta__container">
           <div class="cta__image-wrapper">
             <img
               src="images/home/cta.webp"
-              alt="Child playing music"
+              alt="Student practicing piano during a lesson at Arrow Music Center"
               class="cta__image"
+              width="520"
+              height="312"
             />
           </div>
 
           <div class="cta__content">
-            <h2 class="cta__title">
+            <h2 class="cta__title" id="home-cta-heading">
               Give Your Child a Skill That Lasts a Lifetime
             </h2>
 
@@ -399,12 +473,66 @@
               Start with a free trial lesson and see the difference
             </p>
 
-            <a href="#contact" class="cta__button btn btn--primary">
+            <a
+              href="contact.html#booking-form"
+              class="cta__button btn btn--primary"
+            >
               Book Your Free Trial Lesson
             </a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__col site-footer__col--brand">
+          <p class="site-footer__name">Arrow Music Center</p>
+          <p class="site-footer__tagline">
+            Music lessons for kids in South Gate, CA
+          </p>
+        </div>
+        <nav class="site-footer__col site-footer__nav" aria-label="Footer">
+          <p class="site-footer__heading">Explore</p>
+          <ul class="site-footer__list">
+            <li>
+              <a href="index.html" class="site-footer__link" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="music-lessons.html" class="site-footer__link"
+                >Music Lessons</a
+              >
+            </li>
+            <li>
+              <a href="about.html" class="site-footer__link">About</a>
+            </li>
+            <li>
+              <a href="contact.html" class="site-footer__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-footer__col site-footer__col--contact">
+          <p class="site-footer__heading">Contact</p>
+          <p class="site-footer__text">South Gate, CA</p>
+          <p class="site-footer__text">
+            <a href="tel:+11234567890" class="site-footer__link"
+              >(123) 456-7890</a
+            >
+          </p>
+          <p class="site-footer__text">
+            <a href="mailto:info@arrowmusiccenter.com" class="site-footer__link"
+              >info@arrowmusiccenter.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="site-footer__bar">
+        <p class="site-footer__copy">
+          &copy; 2026 Arrow Music Center. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
