@@ -245,7 +245,7 @@
   margin-bottom: var(--spacing-lg);
   font-size: 1.05rem;
   line-height: 1.55;
-  opacity: 0.95;
+  color: var(--color-on-primary);
   max-width: 36rem;
   margin-inline: auto;
 }

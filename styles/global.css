@@ -2,8 +2,8 @@
    CSS VARIABLES (WOOD THEME)
 ========================= */
 :root {
-  /* Brand (refined wood system) */
-  --color-primary: #b87344; /* polished wood */
+  /* Brand (refined wood system) — primary darkened vs pure white for WCAG AA text */
+  --color-primary: #9a5f2a;
   --color-primary-light: #d89a5b; /* lighter varnish */
   --color-primary-dark: #6f3f1f; /* deeper, richer wood (improved contrast) */
 
@@ -12,8 +12,8 @@
 
   /* Core text (warm but readable) */
   --color-secondary: #3e2618; /* deep brown */
-  --color-text: #5a3824; /* softened text */
-  --color-muted: #8c6a52; /* muted brown */
+  --color-text: #4a2e1a; /* body text — sufficient contrast on cream backgrounds */
+  --color-muted: #5c4030; /* secondary text — AA on #fffaf5 and footer bar */
 
   /* Backgrounds (light wood / paper tones) */
   --color-bg: #fffaf5;
@@ -198,6 +198,7 @@ p {
 .btn--primary {
   background: var(--color-primary);
   color: var(--color-on-primary);
+  font-weight: 600;
 }
 
 .btn--secondary {
@@ -241,7 +242,8 @@ p {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  /* Slightly more opaque surface so nav link text meets contrast on varied backdrops */
+  background: color-mix(in srgb, var(--color-surface) 94%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
@@ -804,7 +806,7 @@ body.page section.hero {
 .site-footer__copy {
   margin: 0;
   font-size: 0.82rem;
-  color: var(--color-muted);
+  color: var(--color-text);
   line-height: 1.45;
 }
 
