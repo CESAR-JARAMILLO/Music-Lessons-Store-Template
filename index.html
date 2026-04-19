@@ -32,7 +32,11 @@
         <label for="site-nav-toggle" class="site-header__menu-btn">
           <span class="site-header__menu-icon"></span>
         </label>
-        <label for="site-nav-toggle" class="site-header__backdrop" aria-hidden="true"></label>
+        <label
+          for="site-nav-toggle"
+          class="site-header__backdrop"
+          aria-hidden="true"
+        ></label>
         <nav class="site-header__nav" aria-label="Main navigation">
           <ul class="site-header__list">
             <li>
@@ -64,7 +68,7 @@
       <!-- HERO -->
       <section
         class="home__hero hero"
-        aria-labelledby="home-hero-heading"
+        aria-labelledby="home-hero-eyebrow home-hero-heading"
       >
         <div class="hero__container">
           <div class="hero__image-wrapper">
@@ -78,6 +82,9 @@
           </div>
 
           <div class="hero__content">
+            <p class="hero__eyebrow" id="home-hero-eyebrow">
+              For parents who want more than screen time
+            </p>
             <h1 class="hero__title" id="home-hero-heading">
               Help Your Child Discover a Skill They’ll Love
             </h1>
@@ -95,6 +102,46 @@
               </li>
             </ul>
 
+            <div class="hero__social-proof">
+              <div class="hero__avatar-stack" aria-hidden="true">
+                <img
+                  src="images/home/single-parent-avatar.webp"
+                  alt=""
+                  width="40"
+                  height="40"
+                  class="hero__avatar"
+                  decoding="async"
+                />
+                <img
+                  src="images/home/family-avatar.webp"
+                  alt=""
+                  width="40"
+                  height="40"
+                  class="hero__avatar"
+                  decoding="async"
+                />
+                <img
+                  src="images/home/instructor-1.webp"
+                  alt=""
+                  width="40"
+                  height="40"
+                  class="hero__avatar"
+                  decoding="async"
+                />
+              </div>
+              <p class="hero__social-proof-copy">
+                <span class="hero__social-proof-sr"
+                  >Rated 5 out of 5 stars.
+                </span>
+                <span class="hero__social-proof-stars" aria-hidden="true"
+                  >★★★★★</span
+                >
+                <span class="hero__social-proof-tagline">
+                  Trusted by South Gate families since 1988
+                </span>
+              </p>
+            </div>
+
             <div class="hero__actions">
               <a
                 href="contact.html#booking-form"
@@ -110,10 +157,7 @@
       </section>
 
       <!-- PROBLEM -->
-      <section
-        class="home__problem problem"
-        aria-labelledby="problem-heading"
-      >
+      <section class="home__problem problem" aria-labelledby="problem-heading">
         <div class="problem__container">
           <h2 class="problem__title" id="problem-heading">
             It’s Hard to Find Activities That Truly Engage Kids Today

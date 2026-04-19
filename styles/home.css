@@ -39,6 +39,116 @@
 }
 
 /* =========================
+   HOME HERO — eyebrow (home page only)
+========================= */
+.home__hero .hero__eyebrow {
+  margin: 0 0 var(--spacing-sm);
+  max-width: 28rem;
+  margin-inline: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+}
+
+/* =========================
+   HOME HERO — social proof (home page only)
+========================= */
+.home__hero .hero__social-proof {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  max-width: 24rem;
+  margin-inline: auto;
+}
+
+.home__hero .hero__avatar-stack {
+  display: flex;
+  flex-shrink: 0;
+  padding-left: 0.2rem;
+}
+
+.home__hero .hero__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-bg-muted);
+  box-shadow: 0 1px 3px rgb(var(--rgb-shadow) / 0.12);
+  margin-left: -0.65rem;
+}
+
+.home__hero .hero__avatar:first-child {
+  margin-left: 0;
+}
+
+.home__hero .hero__social-proof-copy {
+  margin: 0;
+  flex: 1 1 12rem;
+  min-width: 0;
+  text-align: left;
+  line-height: 1.35;
+}
+
+.home__hero .hero__social-proof-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.home__hero .hero__social-proof-stars {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: 0.15rem;
+}
+
+.home__hero .hero__social-proof-tagline {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+@media (max-width: 1023px) {
+  .home__hero .hero__eyebrow {
+    text-align: center;
+  }
+
+  /* Stars + tagline first; avatar row below (DOM has avatars first) */
+  .home__hero .hero__social-proof {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    max-width: none;
+  }
+
+  .home__hero .hero__avatar-stack {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .home__hero .hero__social-proof-copy {
+    flex: none;
+    width: 100%;
+    max-width: 22rem;
+    text-align: center;
+  }
+}
+
+/* =========================
    PROBLEM (card grid)
 ========================= */
 .problem {
@@ -716,6 +826,29 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .home__hero .hero__eyebrow {
+    margin-inline: 0;
+    text-align: left;
+  }
+
+  .home__hero .hero__social-proof {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-inline: 0;
+    max-width: none;
+  }
+
+  .home__hero .hero__avatar-stack {
+    justify-content: flex-start;
+    padding-left: 0.2rem;
+  }
+
+  .home__hero .hero__social-proof-copy {
+    flex: 1 1 12rem;
+    text-align: left;
+  }
+
   /* Solution: image left, copy right */
   .solution__container {
     display: flex;
